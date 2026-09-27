@@ -1,0 +1,24 @@
+name: Replication inquiry
+description: Questions regarding reproducing statistics, hypothesis tests, or data cleaning
+title: "[REPLICATION] "
+labels: ["replication"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for inquiries about dataset provenance, statistical tests (ANOVA, t-tests), or Battle Role clustering.
+  - type: input
+    id: topic
+    attributes:
+      label: Statistical Test / Variable
+      description: Analysis component (e.g., ANOVA, T-Test, K-Means, Pearson correlation).
+      placeholder: e.g., ANOVA for Total Stats, Strong vs Legendary T-Test, K-Means Centroids
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Inquiry Details
+      description: Describe your replication question, variance observation, or environment issue.
+    validations:
+      required: true

@@ -1,0 +1,789 @@
+{
+  "metadata": {
+    "title": "Understanding the Relationship between Pok\u00e9mon Type and its Battle Role",
+    "course": "CSD105 Data Science",
+    "institution": "Ahmedabad University",
+    "instructor": "Professor Hiral Vegda",
+    "authors": [
+      {
+        "name": "Naman Kumar Sinha",
+        "id": "AU2540195"
+      },
+      {
+        "name": "Kabir Chaterjee",
+        "id": "AU23L10004"
+      },
+      {
+        "name": "Tithi Modi",
+        "id": "AU2410174"
+      },
+      {
+        "name": "Hazikah Kazi",
+        "id": "AU25L20003"
+      }
+    ],
+    "raw_record_count": 1220,
+    "cleaned_record_count": 1219,
+    "rows_removed": 1
+  },
+  "summary_statistics": {
+    "Total": {
+      "count": 1219,
+      "mean": 443.678425,
+      "std": 121.438153,
+      "median": 465.0,
+      "min": 175.0,
+      "max": 1125.0,
+      "q25": 334.0,
+      "q75": 525.0
+    },
+    "HP": {
+      "count": 1219,
+      "mean": 71.28548,
+      "std": 26.894684,
+      "median": 70.0,
+      "min": 1.0,
+      "max": 255.0,
+      "q25": 52.5,
+      "q75": 85.0
+    },
+    "Attack": {
+      "count": 1219,
+      "mean": 81.2863,
+      "std": 32.077916,
+      "median": 80.0,
+      "min": 5.0,
+      "max": 190.0,
+      "q25": 57.5,
+      "q75": 100.0
+    },
+    "Defense": {
+      "count": 1219,
+      "mean": 75.079573,
+      "std": 30.723718,
+      "median": 70.0,
+      "min": 5.0,
+      "max": 250.0,
+      "q25": 52.0,
+      "q75": 91.0
+    },
+    "Sp. Atk": {
+      "count": 1219,
+      "mean": 73.355209,
+      "std": 32.823121,
+      "median": 65.0,
+      "min": 10.0,
+      "max": 194.0,
+      "q25": 50.0,
+      "q75": 95.0
+    },
+    "Sp. Def": {
+      "count": 1219,
+      "mean": 72.558655,
+      "std": 27.621274,
+      "median": 70.0,
+      "min": 20.0,
+      "max": 250.0,
+      "q25": 51.0,
+      "q75": 90.0
+    },
+    "Speed": {
+      "count": 1219,
+      "mean": 70.113208,
+      "std": 30.159597,
+      "median": 69.0,
+      "min": 5.0,
+      "max": 200.0,
+      "q25": 45.0,
+      "q75": 91.0
+    }
+  },
+  "strongest_pokemon": {
+    "number": "890",
+    "name": "Eternatus Eternamax",
+    "primary_type": "Poison",
+    "secondary_type": "Dragon",
+    "total": 1125.0,
+    "hp": 255.0,
+    "attack": 115.0,
+    "defense": 250.0,
+    "sp_atk": 125.0,
+    "sp_def": 250.0,
+    "speed": 130.0
+  },
+  "top_10_pokemon": [
+    {
+      "number": "890",
+      "name": "Eternatus Eternamax",
+      "primary_type": "Poison",
+      "secondary_type": "Dragon",
+      "total": 1125.0,
+      "hp": 255.0,
+      "attack": 115.0,
+      "defense": 250.0,
+      "sp_atk": 125.0,
+      "sp_def": 250.0,
+      "speed": 130.0
+    },
+    {
+      "number": "150",
+      "name": "Mewtwo Mega Mewtwo X",
+      "primary_type": "Psychic",
+      "secondary_type": "Fighting",
+      "total": 780.0,
+      "hp": 106.0,
+      "attack": 190.0,
+      "defense": 100.0,
+      "sp_atk": 154.0,
+      "sp_def": 100.0,
+      "speed": 130.0
+    },
+    {
+      "number": "150",
+      "name": "Mewtwo Mega Mewtwo Y",
+      "primary_type": "Psychic",
+      "secondary_type": "None",
+      "total": 780.0,
+      "hp": 106.0,
+      "attack": 150.0,
+      "defense": 70.0,
+      "sp_atk": 194.0,
+      "sp_def": 120.0,
+      "speed": 140.0
+    },
+    {
+      "number": "384",
+      "name": "Rayquaza Mega Rayquaza",
+      "primary_type": "Dragon",
+      "secondary_type": "Flying",
+      "total": 780.0,
+      "hp": 105.0,
+      "attack": 180.0,
+      "defense": 100.0,
+      "sp_atk": 180.0,
+      "sp_def": 100.0,
+      "speed": 115.0
+    },
+    {
+      "number": "382",
+      "name": "Kyogre Primal Kyogre",
+      "primary_type": "Water",
+      "secondary_type": "None",
+      "total": 770.0,
+      "hp": 100.0,
+      "attack": 150.0,
+      "defense": 90.0,
+      "sp_atk": 180.0,
+      "sp_def": 160.0,
+      "speed": 90.0
+    },
+    {
+      "number": "383",
+      "name": "Groudon Primal Groudon",
+      "primary_type": "Ground",
+      "secondary_type": "Fire",
+      "total": 770.0,
+      "hp": 100.0,
+      "attack": 180.0,
+      "defense": 160.0,
+      "sp_atk": 150.0,
+      "sp_def": 90.0,
+      "speed": 90.0
+    },
+    {
+      "number": "800",
+      "name": "Necrozma Ultra Necrozma",
+      "primary_type": "Psychic",
+      "secondary_type": "Dragon",
+      "total": 754.0,
+      "hp": 97.0,
+      "attack": 167.0,
+      "defense": 97.0,
+      "sp_atk": 167.0,
+      "sp_def": 97.0,
+      "speed": 129.0
+    },
+    {
+      "number": "493",
+      "name": "Arceus",
+      "primary_type": "Normal",
+      "secondary_type": "None",
+      "total": 720.0,
+      "hp": 120.0,
+      "attack": 120.0,
+      "defense": 120.0,
+      "sp_atk": 120.0,
+      "sp_def": 120.0,
+      "speed": 120.0
+    },
+    {
+      "number": "718",
+      "name": "Zygarde Complete Forme",
+      "primary_type": "Dragon",
+      "secondary_type": "Ground",
+      "total": 708.0,
+      "hp": 216.0,
+      "attack": 100.0,
+      "defense": 121.0,
+      "sp_atk": 91.0,
+      "sp_def": 95.0,
+      "speed": 85.0
+    },
+    {
+      "number": "149",
+      "name": "Dragonite Mega Dragonite",
+      "primary_type": "Dragon",
+      "secondary_type": "Flying",
+      "total": 700.0,
+      "hp": 91.0,
+      "attack": 124.0,
+      "defense": 115.0,
+      "sp_atk": 145.0,
+      "sp_def": 125.0,
+      "speed": 100.0
+    }
+  ],
+  "most_common_primary_type": {
+    "type": "Water",
+    "count": 150,
+    "percentage": 12.31
+  },
+  "primary_types": {
+    "Dragon": {
+      "count": 50,
+      "percentage": 4.1,
+      "mean_total": 531.0,
+      "std_total": 140.88,
+      "median_total": 585.0
+    },
+    "Steel": {
+      "count": 45,
+      "percentage": 3.69,
+      "mean_total": 489.89,
+      "std_total": 116.14,
+      "median_total": 500.0
+    },
+    "Psychic": {
+      "count": 82,
+      "percentage": 6.73,
+      "mean_total": 486.4,
+      "std_total": 142.65,
+      "median_total": 488.5
+    },
+    "Fighting": {
+      "count": 51,
+      "percentage": 4.18,
+      "mean_total": 460.86,
+      "std_total": 110.75,
+      "median_total": 478.0
+    },
+    "Fire": {
+      "count": 76,
+      "percentage": 6.23,
+      "mean_total": 456.99,
+      "std_total": 106.29,
+      "median_total": 482.0
+    },
+    "Dark": {
+      "count": 57,
+      "percentage": 4.68,
+      "mean_total": 452.04,
+      "std_total": 114.31,
+      "median_total": 480.0
+    },
+    "Flying": {
+      "count": 10,
+      "percentage": 0.82,
+      "mean_total": 450.5,
+      "std_total": 124.13,
+      "median_total": 490.0
+    },
+    "Electric": {
+      "count": 74,
+      "percentage": 6.07,
+      "mean_total": 449.41,
+      "std_total": 108.64,
+      "median_total": 485.0
+    },
+    "Fairy": {
+      "count": 31,
+      "percentage": 2.54,
+      "mean_total": 449.23,
+      "std_total": 132.85,
+      "median_total": 477.0
+    },
+    "Rock": {
+      "count": 68,
+      "percentage": 5.58,
+      "mean_total": 449.13,
+      "std_total": 106.77,
+      "median_total": 478.5
+    },
+    "Ground": {
+      "count": 47,
+      "percentage": 3.86,
+      "mean_total": 441.96,
+      "std_total": 117.06,
+      "median_total": 471.0
+    },
+    "Poison": {
+      "count": 49,
+      "percentage": 4.02,
+      "mean_total": 439.51,
+      "std_total": 146.03,
+      "median_total": 467.0
+    },
+    "Ice": {
+      "count": 43,
+      "percentage": 3.53,
+      "mean_total": 438.63,
+      "std_total": 107.18,
+      "median_total": 470.0
+    },
+    "Ghost": {
+      "count": 47,
+      "percentage": 3.86,
+      "mean_total": 438.28,
+      "std_total": 107.17,
+      "median_total": 476.0
+    },
+    "Water": {
+      "count": 150,
+      "percentage": 12.31,
+      "mean_total": 436.81,
+      "std_total": 115.0,
+      "median_total": 460.0
+    },
+    "Grass": {
+      "count": 114,
+      "percentage": 9.35,
+      "mean_total": 427.89,
+      "std_total": 110.32,
+      "median_total": 460.0
+    },
+    "Normal": {
+      "count": 134,
+      "percentage": 10.99,
+      "mean_total": 413.28,
+      "std_total": 113.74,
+      "median_total": 421.5
+    },
+    "Bug": {
+      "count": 91,
+      "percentage": 7.47,
+      "mean_total": 381.16,
+      "std_total": 122.34,
+      "median_total": 395.0
+    }
+  },
+  "power_categories": {
+    "Weak": {
+      "count": 183,
+      "percentage": 15.01,
+      "mean_total": 261.5,
+      "median_total": 270.0,
+      "stats_mean": {
+        "HP": 44.21,
+        "Attack": 45.84,
+        "Defense": 44.74,
+        "Sp. Atk": 39.79,
+        "Sp. Def": 42.1,
+        "Speed": 44.82
+      }
+    },
+    "Average": {
+      "count": 377,
+      "percentage": 30.93,
+      "mean_total": 370.14,
+      "median_total": 365.0,
+      "stats_mean": {
+        "HP": 60.65,
+        "Attack": 67.14,
+        "Defense": 63.49,
+        "Sp. Atk": 58.49,
+        "Sp. Def": 60.37,
+        "Speed": 59.99
+      }
+    },
+    "Strong": {
+      "count": 588,
+      "percentage": 48.24,
+      "mean_total": 518.53,
+      "median_total": 507.5,
+      "stats_mean": {
+        "HP": 82.73,
+        "Attack": 95.31,
+        "Defense": 87.56,
+        "Sp. Atk": 86.94,
+        "Sp. Def": 85.26,
+        "Speed": 80.73
+      }
+    },
+    "Legendary": {
+      "count": 71,
+      "percentage": 5.82,
+      "mean_total": 683.82,
+      "median_total": 680.0,
+      "stats_mean": {
+        "HP": 102.72,
+        "Attack": 131.68,
+        "Defense": 111.45,
+        "Sp. Atk": 126.3,
+        "Sp. Def": 110.58,
+        "Speed": 101.1
+      }
+    }
+  },
+  "focal_pair_correlations": [
+    {
+      "pair": "Attack vs Defense",
+      "stat1": "Attack",
+      "stat2": "Defense",
+      "pearson_r": 0.4695,
+      "pearson_p": 7.404158482231325e-68,
+      "pearson_significant": true,
+      "spearman_rho": 0.5278,
+      "spearman_p": 2.1699866197779753e-88,
+      "spearman_significant": true
+    },
+    {
+      "pair": "Sp. Atk vs Sp. Def",
+      "stat1": "Sp. Atk",
+      "stat2": "Sp. Def",
+      "pearson_r": 0.5167,
+      "pearson_p": 3.6825654724481094e-84,
+      "pearson_significant": true,
+      "spearman_rho": 0.5736,
+      "spearman_p": 1.48825104237527e-107,
+      "spearman_significant": true
+    },
+    {
+      "pair": "HP vs Total",
+      "stat1": "HP",
+      "stat2": "Total",
+      "pearson_r": 0.6596,
+      "pearson_p": 4.00501050973399e-153,
+      "pearson_significant": true,
+      "spearman_rho": 0.7316,
+      "spearman_p": 1.0363263283905377e-204,
+      "spearman_significant": true
+    },
+    {
+      "pair": "Speed vs Total",
+      "stat1": "Speed",
+      "stat2": "Total",
+      "pearson_r": 0.5633,
+      "pearson_p": 5.48473069581694e-103,
+      "pearson_significant": true,
+      "spearman_rho": 0.5511,
+      "spearman_p": 9.412303944311365e-98,
+      "spearman_significant": true
+    },
+    {
+      "pair": "Attack vs Sp. Atk",
+      "stat1": "Attack",
+      "stat2": "Sp. Atk",
+      "pearson_r": 0.3307,
+      "pearson_p": 1.6784732894304142e-32,
+      "pearson_significant": true,
+      "spearman_rho": 0.3186,
+      "spearman_p": 3.7350685661827285e-30,
+      "spearman_significant": true
+    }
+  ],
+  "pearson_correlation_matrix": {
+    "Total": {
+      "Total": 1.0,
+      "HP": 0.6596,
+      "Attack": 0.7316,
+      "Defense": 0.6403,
+      "Sp. Atk": 0.7192,
+      "Sp. Def": 0.7228,
+      "Speed": 0.5633
+    },
+    "HP": {
+      "Total": 0.6596,
+      "HP": 1.0,
+      "Attack": 0.4619,
+      "Defense": 0.333,
+      "Sp. Atk": 0.3584,
+      "Sp. Def": 0.3946,
+      "Speed": 0.1824
+    },
+    "Attack": {
+      "Total": 0.7316,
+      "HP": 0.4619,
+      "Attack": 1.0,
+      "Defense": 0.4695,
+      "Sp. Atk": 0.3307,
+      "Sp. Def": 0.2779,
+      "Speed": 0.3775
+    },
+    "Defense": {
+      "Total": 0.6403,
+      "HP": 0.333,
+      "Attack": 0.4695,
+      "Defense": 1.0,
+      "Sp. Atk": 0.2332,
+      "Sp. Def": 0.5339,
+      "Speed": 0.0202
+    },
+    "Sp. Atk": {
+      "Total": 0.7192,
+      "HP": 0.3584,
+      "Attack": 0.3307,
+      "Defense": 0.2332,
+      "Sp. Atk": 1.0,
+      "Sp. Def": 0.5167,
+      "Speed": 0.4254
+    },
+    "Sp. Def": {
+      "Total": 0.7228,
+      "HP": 0.3946,
+      "Attack": 0.2779,
+      "Defense": 0.5339,
+      "Sp. Atk": 0.5167,
+      "Sp. Def": 1.0,
+      "Speed": 0.2407
+    },
+    "Speed": {
+      "Total": 0.5633,
+      "HP": 0.1824,
+      "Attack": 0.3775,
+      "Defense": 0.0202,
+      "Sp. Atk": 0.4254,
+      "Sp. Def": 0.2407,
+      "Speed": 1.0
+    }
+  },
+  "spearman_correlation_matrix": {
+    "Total": {
+      "Total": 1.0,
+      "HP": 0.7316,
+      "Attack": 0.7265,
+      "Defense": 0.6862,
+      "Sp. Atk": 0.7148,
+      "Sp. Def": 0.7409,
+      "Speed": 0.5511
+    },
+    "HP": {
+      "Total": 0.7316,
+      "HP": 1.0,
+      "Attack": 0.5866,
+      "Defense": 0.4835,
+      "Sp. Atk": 0.4566,
+      "Sp. Def": 0.4931,
+      "Speed": 0.2653
+    },
+    "Attack": {
+      "Total": 0.7265,
+      "HP": 0.5866,
+      "Attack": 1.0,
+      "Defense": 0.5278,
+      "Sp. Atk": 0.3186,
+      "Sp. Def": 0.3316,
+      "Speed": 0.3766
+    },
+    "Defense": {
+      "Total": 0.6862,
+      "HP": 0.4835,
+      "Attack": 0.5278,
+      "Defense": 1.0,
+      "Sp. Atk": 0.3193,
+      "Sp. Def": 0.5935,
+      "Speed": 0.0836
+    },
+    "Sp. Atk": {
+      "Total": 0.7148,
+      "HP": 0.4566,
+      "Attack": 0.3186,
+      "Defense": 0.3193,
+      "Sp. Atk": 1.0,
+      "Sp. Def": 0.5736,
+      "Speed": 0.4194
+    },
+    "Sp. Def": {
+      "Total": 0.7409,
+      "HP": 0.4931,
+      "Attack": 0.3316,
+      "Defense": 0.5935,
+      "Sp. Atk": 0.5736,
+      "Sp. Def": 1.0,
+      "Speed": 0.2859
+    },
+    "Speed": {
+      "Total": 0.5511,
+      "HP": 0.2653,
+      "Attack": 0.3766,
+      "Defense": 0.0836,
+      "Sp. Atk": 0.4194,
+      "Sp. Def": 0.2859,
+      "Speed": 1.0
+    }
+  },
+  "hypothesis_testing": {
+    "t_tests_strong_vs_legendary": {
+      "HP": {
+        "strong_mean": 82.73,
+        "legendary_mean": 102.72,
+        "difference": 19.99,
+        "t_statistic": -6.7077,
+        "p_value": 4.26930415046482e-11,
+        "p_value_formatted": "4.2693e-11",
+        "significant": true,
+        "cohens_d": 0.843
+      },
+      "Attack": {
+        "strong_mean": 95.31,
+        "legendary_mean": 131.68,
+        "difference": 36.37,
+        "t_statistic": -10.9851,
+        "p_value": 6.87849580670981e-26,
+        "p_value_formatted": "6.8785e-26",
+        "significant": true,
+        "cohens_d": 1.3802
+      },
+      "Defense": {
+        "strong_mean": 87.56,
+        "legendary_mean": 111.45,
+        "difference": 23.89,
+        "t_statistic": -6.805,
+        "p_value": 2.2795023477109193e-11,
+        "p_value_formatted": "2.2795e-11",
+        "significant": true,
+        "cohens_d": 0.855
+      },
+      "Sp. Atk": {
+        "strong_mean": 86.94,
+        "legendary_mean": 126.3,
+        "difference": 39.36,
+        "t_statistic": -10.8274,
+        "p_value": 2.985868013000919e-25,
+        "p_value_formatted": "2.9859e-25",
+        "significant": true,
+        "cohens_d": 1.3605
+      },
+      "Sp. Def": {
+        "strong_mean": 85.26,
+        "legendary_mean": 110.58,
+        "difference": 25.32,
+        "t_statistic": -8.5845,
+        "p_value": 6.58468268545588e-17,
+        "p_value_formatted": "6.5847e-17",
+        "significant": true,
+        "cohens_d": 1.0787
+      },
+      "Speed": {
+        "strong_mean": 80.73,
+        "legendary_mean": 101.1,
+        "difference": 20.37,
+        "t_statistic": -5.613,
+        "p_value": 2.9340855819517067e-08,
+        "p_value_formatted": "2.9341e-08",
+        "significant": true,
+        "cohens_d": 0.7053
+      }
+    },
+    "anova_results": {
+      "total_stats": {
+        "f_statistic": 2551.9153,
+        "p_value": 0.0,
+        "p_value_formatted": "0.0000e+00",
+        "significant": true,
+        "category_means": {
+          "Weak": 261.5,
+          "Average": 370.14,
+          "Strong": 518.53,
+          "Legendary": 683.82
+        }
+      },
+      "individual_stats": {
+        "HP": {
+          "f_statistic": 235.5743,
+          "p_value": 1.8443081157775443e-120,
+          "p_value_formatted": "1.8443e-120",
+          "significant": true
+        },
+        "Attack": {
+          "f_statistic": 373.5652,
+          "p_value": 7.1228337354876e-172,
+          "p_value_formatted": "7.1228e-172",
+          "significant": true
+        },
+        "Defense": {
+          "f_statistic": 219.9424,
+          "p_value": 5.9502842884808324e-114,
+          "p_value_formatted": "5.9503e-114",
+          "significant": true
+        },
+        "Sp. Atk": {
+          "f_statistic": 338.0206,
+          "p_value": 1.4784194318212561e-159,
+          "p_value_formatted": "1.4784e-159",
+          "significant": true
+        },
+        "Sp. Def": {
+          "f_statistic": 338.7128,
+          "p_value": 8.401676713700342e-160,
+          "p_value_formatted": "8.4017e-160",
+          "significant": true
+        },
+        "Speed": {
+          "f_statistic": 143.6913,
+          "p_value": 1.1006568463435326e-79,
+          "p_value_formatted": "1.1007e-79",
+          "significant": true
+        }
+      }
+    }
+  },
+  "clustering_analysis": {
+    "k_clusters": 4,
+    "profiles": {
+      "0": {
+        "provisional_role": "Balanced / Tank",
+        "total_mean": 480.3,
+        "hp": 73.04,
+        "attack": 93.26,
+        "defense": 69.04,
+        "sp_atk": 77.21,
+        "sp_def": 70.49,
+        "speed": 97.26,
+        "count": 319
+      },
+      "1": {
+        "provisional_role": "Low-Stat Unevolved",
+        "total_mean": 300.91,
+        "hp": 49.61,
+        "attack": 53.75,
+        "defense": 50.53,
+        "sp_atk": 48.11,
+        "sp_def": 48.86,
+        "speed": 50.06,
+        "count": 398
+      },
+      "2": {
+        "provisional_role": "Sweeper (Fast Offensive)",
+        "total_mean": 593.23,
+        "hp": 91.94,
+        "attack": 99.16,
+        "defense": 91.93,
+        "sp_atk": 117.62,
+        "sp_def": 102.97,
+        "speed": 89.61,
+        "count": 236
+      },
+      "3": {
+        "provisional_role": "Wall (Defensive Stall)",
+        "total_mean": 480.68,
+        "hp": 83.3,
+        "attack": 92.26,
+        "defense": 104.11,
+        "sp_atk": 67.23,
+        "sp_def": 83.52,
+        "speed": 50.27,
+        "count": 266
+      }
+    }
+  }
+}

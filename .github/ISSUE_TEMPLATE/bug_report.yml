@@ -1,0 +1,31 @@
+name: Bug report
+description: Create a report to help us improve the analysis or pipeline
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report an issue!
+  - type: input
+    id: script
+    attributes:
+      label: Affected Script or File
+      description: Which script, notebook, or data file encountered an error?
+      placeholder: e.g., scripts/make_charts.py, data/pokemon_database_cleaned.csv
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Exact commands or environment details to reproduce the behavior.
+    validations:
+      required: true

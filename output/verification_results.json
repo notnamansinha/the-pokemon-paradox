@@ -1,0 +1,520 @@
+{
+  "status": "SUCCESS",
+  "total_checks": 128,
+  "passed_checks": 128,
+  "failed_checks": 0,
+  "checks": [
+    {
+      "name": "Raw record count is exactly 1220",
+      "status": "PASSED"
+    },
+    {
+      "name": "Cleaned record count is exactly 1219",
+      "status": "PASSED"
+    },
+    {
+      "name": "Exactly 1 incomplete row removed during cleaning",
+      "status": "PASSED"
+    },
+    {
+      "name": "Total BST mean is 443.68",
+      "status": "PASSED"
+    },
+    {
+      "name": "Total BST median is exactly 465.0",
+      "status": "PASSED"
+    },
+    {
+      "name": "Total BST min is 175.0",
+      "status": "PASSED"
+    },
+    {
+      "name": "Total BST max is 1125.0",
+      "status": "PASSED"
+    },
+    {
+      "name": "HP count is 1219",
+      "status": "PASSED"
+    },
+    {
+      "name": "HP mean is between 10 and 150",
+      "status": "PASSED"
+    },
+    {
+      "name": "Attack count is 1219",
+      "status": "PASSED"
+    },
+    {
+      "name": "Attack mean is between 10 and 150",
+      "status": "PASSED"
+    },
+    {
+      "name": "Defense count is 1219",
+      "status": "PASSED"
+    },
+    {
+      "name": "Defense mean is between 10 and 150",
+      "status": "PASSED"
+    },
+    {
+      "name": "Sp. Atk count is 1219",
+      "status": "PASSED"
+    },
+    {
+      "name": "Sp. Atk mean is between 10 and 150",
+      "status": "PASSED"
+    },
+    {
+      "name": "Sp. Def count is 1219",
+      "status": "PASSED"
+    },
+    {
+      "name": "Sp. Def mean is between 10 and 150",
+      "status": "PASSED"
+    },
+    {
+      "name": "Speed count is 1219",
+      "status": "PASSED"
+    },
+    {
+      "name": "Speed mean is between 10 and 150",
+      "status": "PASSED"
+    },
+    {
+      "name": "Apex Pok\u00e9mon is Eternatus Eternamax",
+      "status": "PASSED"
+    },
+    {
+      "name": "Apex Pok\u00e9mon Total is exactly 1125.0",
+      "status": "PASSED"
+    },
+    {
+      "name": "Apex Pok\u00e9mon HP is 255.0",
+      "status": "PASSED"
+    },
+    {
+      "name": "Apex Pok\u00e9mon Defense is 250.0",
+      "status": "PASSED"
+    },
+    {
+      "name": "Apex Pok\u00e9mon Sp. Def is 250.0",
+      "status": "PASSED"
+    },
+    {
+      "name": "Top 10 list contains exactly 10 entries",
+      "status": "PASSED"
+    },
+    {
+      "name": "Top 10 #1 is Eternatus Eternamax",
+      "status": "PASSED"
+    },
+    {
+      "name": "Top 10 #2 is Mega Mewtwo X (780)",
+      "status": "PASSED"
+    },
+    {
+      "name": "Top 10 #3 is Mega Mewtwo Y (780)",
+      "status": "PASSED"
+    },
+    {
+      "name": "Top 10 #4 is Mega Rayquaza (780)",
+      "status": "PASSED"
+    },
+    {
+      "name": "Top 10 #5 is Primal Kyogre (770)",
+      "status": "PASSED"
+    },
+    {
+      "name": "Top 10 #6 is Primal Groudon (770)",
+      "status": "PASSED"
+    },
+    {
+      "name": "Top 10 #7 is Ultra Necrozma (754)",
+      "status": "PASSED"
+    },
+    {
+      "name": "Top 10 #8 is Arceus (720)",
+      "status": "PASSED"
+    },
+    {
+      "name": "Top 10 #9 is Zygarde Complete Forme (708)",
+      "status": "PASSED"
+    },
+    {
+      "name": "Top 10 #10 total is at least 700",
+      "status": "PASSED"
+    },
+    {
+      "name": "Most common primary type is Water",
+      "status": "PASSED"
+    },
+    {
+      "name": "Water type count is 150",
+      "status": "PASSED"
+    },
+    {
+      "name": "Water type proportion is 12.3%",
+      "status": "PASSED"
+    },
+    {
+      "name": "All 18 standard elemental types are indexed",
+      "status": "PASSED"
+    },
+    {
+      "name": "Primary type Water exists",
+      "status": "PASSED"
+    },
+    {
+      "name": "Primary type Normal exists",
+      "status": "PASSED"
+    },
+    {
+      "name": "Primary type Grass exists",
+      "status": "PASSED"
+    },
+    {
+      "name": "Primary type Bug exists",
+      "status": "PASSED"
+    },
+    {
+      "name": "Primary type Psychic exists",
+      "status": "PASSED"
+    },
+    {
+      "name": "Primary type Fire exists",
+      "status": "PASSED"
+    },
+    {
+      "name": "Primary type Electric exists",
+      "status": "PASSED"
+    },
+    {
+      "name": "Primary type Rock exists",
+      "status": "PASSED"
+    },
+    {
+      "name": "Primary type Dragon exists",
+      "status": "PASSED"
+    },
+    {
+      "name": "Primary type Steel exists",
+      "status": "PASSED"
+    },
+    {
+      "name": "Attack vs Defense Pearson r is 0.4695",
+      "status": "PASSED"
+    },
+    {
+      "name": "Attack vs Defense Spearman rho is 0.5278",
+      "status": "PASSED"
+    },
+    {
+      "name": "Attack vs Defense is statistically significant",
+      "status": "PASSED"
+    },
+    {
+      "name": "Sp. Atk vs Sp. Def Pearson r is 0.5167",
+      "status": "PASSED"
+    },
+    {
+      "name": "Sp. Atk vs Sp. Def Spearman rho is 0.5736",
+      "status": "PASSED"
+    },
+    {
+      "name": "Sp. Atk vs Sp. Def is statistically significant",
+      "status": "PASSED"
+    },
+    {
+      "name": "HP vs Total Pearson r is 0.6596",
+      "status": "PASSED"
+    },
+    {
+      "name": "HP vs Total Spearman rho is 0.7316",
+      "status": "PASSED"
+    },
+    {
+      "name": "HP vs Total is strongest rank correlation",
+      "status": "PASSED"
+    },
+    {
+      "name": "Speed vs Total Pearson r is 0.5633",
+      "status": "PASSED"
+    },
+    {
+      "name": "Speed vs Total Spearman rho is 0.5511",
+      "status": "PASSED"
+    },
+    {
+      "name": "Attack vs Sp. Atk Pearson r is 0.3307",
+      "status": "PASSED"
+    },
+    {
+      "name": "Attack vs Sp. Atk Spearman rho is 0.3186",
+      "status": "PASSED"
+    },
+    {
+      "name": "Defense vs Speed correlation is near zero (0.02)",
+      "status": "PASSED"
+    },
+    {
+      "name": "HP Strong mean is 82.73",
+      "status": "PASSED"
+    },
+    {
+      "name": "HP Legendary mean is 102.72",
+      "status": "PASSED"
+    },
+    {
+      "name": "HP p-value < 1e-10",
+      "status": "PASSED"
+    },
+    {
+      "name": "Attack Strong mean is 95.31",
+      "status": "PASSED"
+    },
+    {
+      "name": "Attack Legendary mean is 131.68",
+      "status": "PASSED"
+    },
+    {
+      "name": "Attack p-value < 1e-25",
+      "status": "PASSED"
+    },
+    {
+      "name": "Defense Strong mean is 87.56",
+      "status": "PASSED"
+    },
+    {
+      "name": "Defense Legendary mean is 111.45",
+      "status": "PASSED"
+    },
+    {
+      "name": "Defense p-value < 1e-10",
+      "status": "PASSED"
+    },
+    {
+      "name": "Sp. Atk Strong mean is 86.94",
+      "status": "PASSED"
+    },
+    {
+      "name": "Sp. Atk Legendary mean is 126.30",
+      "status": "PASSED"
+    },
+    {
+      "name": "Sp. Atk p-value < 1e-24",
+      "status": "PASSED"
+    },
+    {
+      "name": "Sp. Def Strong mean is 85.26",
+      "status": "PASSED"
+    },
+    {
+      "name": "Sp. Def Legendary mean is 110.58",
+      "status": "PASSED"
+    },
+    {
+      "name": "Sp. Def p-value < 1e-16",
+      "status": "PASSED"
+    },
+    {
+      "name": "Speed Strong mean is 80.73",
+      "status": "PASSED"
+    },
+    {
+      "name": "Speed Legendary mean is 101.10",
+      "status": "PASSED"
+    },
+    {
+      "name": "Speed p-value < 1e-7",
+      "status": "PASSED"
+    },
+    {
+      "name": "ANOVA Total F-statistic is 2551.92",
+      "status": "PASSED"
+    },
+    {
+      "name": "ANOVA Total p-value is 0.0",
+      "status": "PASSED"
+    },
+    {
+      "name": "ANOVA Weak mean is 261.50",
+      "status": "PASSED"
+    },
+    {
+      "name": "ANOVA Average mean is 370.14",
+      "status": "PASSED"
+    },
+    {
+      "name": "ANOVA Strong mean is 518.53",
+      "status": "PASSED"
+    },
+    {
+      "name": "ANOVA Legendary mean is 683.82",
+      "status": "PASSED"
+    },
+    {
+      "name": "ANOVA HP F-statistic is 235.57",
+      "status": "PASSED"
+    },
+    {
+      "name": "ANOVA Attack F-statistic is 373.57",
+      "status": "PASSED"
+    },
+    {
+      "name": "ANOVA Defense F-statistic is 219.94",
+      "status": "PASSED"
+    },
+    {
+      "name": "ANOVA Sp. Atk F-statistic is 338.02",
+      "status": "PASSED"
+    },
+    {
+      "name": "ANOVA Sp. Def F-statistic is 338.71",
+      "status": "PASSED"
+    },
+    {
+      "name": "ANOVA Speed F-statistic is 143.69",
+      "status": "PASSED"
+    },
+    {
+      "name": "K-Means resolved exactly 4 clusters",
+      "status": "PASSED"
+    },
+    {
+      "name": "All 1219 Pok\u00e9mon assigned to clusters",
+      "status": "PASSED"
+    },
+    {
+      "name": "figure_1_top_10_bst.png exists and size > 10KB",
+      "status": "PASSED"
+    },
+    {
+      "name": "figure_1_top_10_bst.pdf exists and size > 5KB",
+      "status": "PASSED"
+    },
+    {
+      "name": "figure_2_attack_vs_defense.png exists and size > 10KB",
+      "status": "PASSED"
+    },
+    {
+      "name": "figure_2_attack_vs_defense.pdf exists and size > 5KB",
+      "status": "PASSED"
+    },
+    {
+      "name": "figure_3_correlation_heatmap.png exists and size > 10KB",
+      "status": "PASSED"
+    },
+    {
+      "name": "figure_3_correlation_heatmap.pdf exists and size > 5KB",
+      "status": "PASSED"
+    },
+    {
+      "name": "figure_4_bst_distribution.png exists and size > 10KB",
+      "status": "PASSED"
+    },
+    {
+      "name": "figure_4_bst_distribution.pdf exists and size > 5KB",
+      "status": "PASSED"
+    },
+    {
+      "name": "figure_5_stat_boxplots_by_category.png exists and size > 10KB",
+      "status": "PASSED"
+    },
+    {
+      "name": "figure_5_stat_boxplots_by_category.pdf exists and size > 5KB",
+      "status": "PASSED"
+    },
+    {
+      "name": "figure_6_type_average_bst.png exists and size > 10KB",
+      "status": "PASSED"
+    },
+    {
+      "name": "figure_6_type_average_bst.pdf exists and size > 5KB",
+      "status": "PASSED"
+    },
+    {
+      "name": "figure_7_individual_stat_distributions.png exists and size > 10KB",
+      "status": "PASSED"
+    },
+    {
+      "name": "figure_7_individual_stat_distributions.pdf exists and size > 5KB",
+      "status": "PASSED"
+    },
+    {
+      "name": "figure_8_primary_type_pie_chart.png exists and size > 10KB",
+      "status": "PASSED"
+    },
+    {
+      "name": "figure_8_primary_type_pie_chart.pdf exists and size > 5KB",
+      "status": "PASSED"
+    },
+    {
+      "name": "figure_9_strong_vs_legendary_stats.png exists and size > 10KB",
+      "status": "PASSED"
+    },
+    {
+      "name": "figure_9_strong_vs_legendary_stats.pdf exists and size > 5KB",
+      "status": "PASSED"
+    },
+    {
+      "name": "figure_10_cluster_battle_roles.png exists and size > 10KB",
+      "status": "PASSED"
+    },
+    {
+      "name": "figure_10_cluster_battle_roles.pdf exists and size > 5KB",
+      "status": "PASSED"
+    },
+    {
+      "name": "Report DOCX exists and size > 20KB",
+      "status": "PASSED"
+    },
+    {
+      "name": "Primary Term Paper PDF exists and size > 100KB",
+      "status": "PASSED"
+    },
+    {
+      "name": "DOCX contains Abstract",
+      "status": "PASSED"
+    },
+    {
+      "name": "DOCX contains Introduction",
+      "status": "PASSED"
+    },
+    {
+      "name": "DOCX contains Methodology",
+      "status": "PASSED"
+    },
+    {
+      "name": "DOCX contains Empirical Findings",
+      "status": "PASSED"
+    },
+    {
+      "name": "DOCX contains Discussion",
+      "status": "PASSED"
+    },
+    {
+      "name": "DOCX contains Conclusion",
+      "status": "PASSED"
+    },
+    {
+      "name": "DOCX contains References",
+      "status": "PASSED"
+    },
+    {
+      "name": "DOCX contains Eternatus",
+      "status": "PASSED"
+    },
+    {
+      "name": "DOCX contains ANOVA F-statistic",
+      "status": "PASSED"
+    },
+    {
+      "name": "DOCX word count exceeds 1500 words",
+      "status": "PASSED"
+    },
+    {
+      "name": "DOCX tables exist (at least 3 tables)",
+      "status": "PASSED"
+    }
+  ]
+}
